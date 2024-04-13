@@ -1,0 +1,44 @@
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1vh;
+    grid-auto-rows: minmax(10vh, auto);
+    justify-items: stretch;
+    padding: 2vh;
+    width: 80vh;
+    margin:auto;
+}
+
+
+.grid-footer div {
+    background: hsl(192, 15%, 94%);
+}
+
+.title-footer{
+     font-weight: bold;
+}
+
+.grid-footer div div {
+    display: grid;
+    padding: 1vh;
+    gap: 1vh;
+    
+}
+.element1{
+    grid-column: 1/3;
+}
+
+.element1 .logo object {
+    max-height: 30vh; /* Limita la altura máxima */
+    width: auto; /* Mantiene la proporción del SVG */
+    height: auto; /* Mantiene la proporción del SVG */
+    max-width: 100%; /* Asegura que no se desborde de su contenedor */
+}
+
+.element7 {
+    grid-column: 1 /8;
+}
+
+.grid-footer > div:hover {
+    border: 1px solid #f1c40f
+}
